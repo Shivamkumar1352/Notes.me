@@ -13,34 +13,34 @@
         justify-content: center;
         align-items: center;
 
-        article{
-            display: flex;
-            cursor: pointer;
+        .option{
             width: 320px;
-            margin: 25px 0;
-            padding: 13px 20px ;
-            gap: 10px;
-            background-color: var(--red);
-            color: var(--white);
-            align-items: center;
+            display: flex;
+            height: 1px;
             justify-content: center;
-            border-radius: 8px;
-
-            svg{
-                width: 24px;
-                height: 24px;
-            }
+            align-items: center;
+            border: 0.5px solid var(--grey-400);
+            margin-bottom: 40px;
             
-            h3{
-                font-size: var(--fs-lg);
+            
+            span{
+                font-size: var(--fs-sm);
+                z-index: 1;
+                padding: 0 15px;
+                color: var(--grey-400);
+                position: absolute;
+                background-color: var(--white);
             }
         }
 
-        .option{
+        .details{
             display: flex;
+            gap: 15px;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+
+            .loginBtn{
+            background-color: var(--green);
+            }
         }
     }
 }
