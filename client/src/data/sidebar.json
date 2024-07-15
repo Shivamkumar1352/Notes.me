@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Home",
+        "icon": "lucide:home",
+        "path": "/notes"
+    },
+    {
+        "title": "Add Notes",
+        "icon": "mi:add",
+        "path": "/notes"
+    }
+]
