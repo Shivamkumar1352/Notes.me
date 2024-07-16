@@ -10,15 +10,16 @@ function Sidebar() {
         <BrandLogo logoOnly={true} type="dark" className={styles.logo}/>
         <section>
             {
-                sideData.map(item=>{
-                    <article  className={styles.item}>
-                        <Icon icon={item.icon}/>
-                    </article>
+                sideData.map((item, index)=>{
+                    return(
+                    <article key={index} className={styles.item}>
+                        <Icon icon={item.icon} color={index===1?"var(--grey-400)":"var(--white)"}/>
+                    </article>)
                 })
             }
         </section>
         <article className={styles.logout}>
-            <Icon icon={"material-symbols:logout"}/>
+            <Icon icon={"line-md:logout"}/>
         </article>
     </aside>
   )
