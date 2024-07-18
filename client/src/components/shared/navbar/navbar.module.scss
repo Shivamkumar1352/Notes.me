@@ -19,7 +19,6 @@
         color: var(--grey-400);
 
         .field{
-            // border: 1px solid red;
            width: 100%;
            input{
             border: none;
@@ -38,6 +37,7 @@
         width: 30px;
         height: 30px;
         color: var(--grey-400);
+        cursor: pointer;
         }
     }
 }

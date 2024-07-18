@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import styles from './form.module.scss'
 import BrandLogo from '../../../../components/shared/brand'
-import { Icon } from '@iconify/react'
 import Input from '../../../../components/atoms/input'
 import Button from '../../../../components/atoms/button'
+import { useNavigate } from 'react-router-dom'
 
 function Form() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   return (
@@ -22,7 +23,7 @@ function Form() {
         <article className={styles.details}>
           <Input type={'email'} placeholder={'Enter your Email Id'} value={email} onChange={(e) => setEmail(e.target.value)} />
           <Input type={'password'} placeholder={'Enter your password'} value={password} onChange={(e) => setPassword(e.target.value)} />
-          <Button text='Join with email' icon='material-symbols:login' className={styles.loginBtn} />
+          <Button text='Join with email' icon='material-symbols:login' className={styles.loginBtn} handleClick={()=>{navigate('/notes')}}/>
         </article>
       </div>
     </section>

@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-rows: auto 30px;
+    width: 100%;
+    aspect-ratio: 1.1/1;
+    background-color: #FBEB9566;
+    padding: 30px;
+    border-radius: 15px;
+
+    .content {
+        p {
+            color: #3C3D43;
+            line-height: 23px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            font-size: var(--fs-md);
+            font-weight: var(--fw-normal);
+        }
+        .expanded{
+            display: block;
+        }
+
+        button{
+            text-transform: capitalize;
+            background-color: transparent;
+            color: var(--grey-400);
+            cursor: pointer;
+        }
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        font-size: var(--fs-sm);
+        color: var(--grey-400);
+    }
+}

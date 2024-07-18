@@ -3,8 +3,10 @@ import styles from './sidebar.module.scss'
 import BrandLogo from '../brand'
 import { Icon } from '@iconify/react/dist/iconify.js'
 import sideData from '../../../data/sidebar.json'
+import { useNavigate } from 'react-router-dom'
 
 function Sidebar() {
+    const navigate = useNavigate()
   return (
     <aside className={styles.sidebar}>
         <BrandLogo logoOnly={true} type="dark" className={styles.logo}/>
@@ -19,7 +21,7 @@ function Sidebar() {
             }
         </section>
         <article className={styles.logout}>
-            <Icon icon={"line-md:logout"}/>
+            <Icon icon={"material-symbols:logout"} onClick={()=>navigate("/")}/>
         </article>
     </aside>
   )
