@@ -1,22 +1,32 @@
 .container {
     display: grid;
-    grid-template-rows: auto 30px;
+    grid-template-rows: auto 25px;
     width: 100%;
     aspect-ratio: 1.1/1;
     background-color: #FBEB9566;
-    padding: 30px;
+    padding: 15px;
     border-radius: 15px;
 
     .content {
         p {
+            display: -webkit-box;
+            overflow: hidden;
+            line-clamp: 5;
             color: #3C3D43;
             line-height: 23px;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
+            -webkit-line-clamp: 5;
             -webkit-box-orient: vertical;
             font-size: var(--fs-md);
             font-weight: var(--fw-normal);
+        }
+
+        .textarea{
+            height: 100%;
+            background-color: transparent;
+            font-size: var(--fs-md);
+            font-weight: var(--fw-normal);
+            color: #3C3D43;
+            line-height: 23px;
         }
         .expanded{
             display: block;
@@ -35,5 +45,9 @@
         align-items: center;
         font-size: var(--fs-sm);
         color: var(--grey-400);
+        justify-content: space-between;
+        svg{
+            cursor: pointer;
+        }
     }
 }

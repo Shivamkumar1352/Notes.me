@@ -9,7 +9,7 @@ function BrandLogo(props) {
 
   return (
     <article className={`${styles.brand} ${className}`}>
-        <img src={type=="light"? BrandLightImg : BrandDarkImg} alt='brand-logo'/>
+        <img src={type==="light"? BrandLightImg : BrandDarkImg} alt='brand-logo'/>
         {!logoOnly?
           (<h1>NOTE.<span>me</span></h1>)
         : null}

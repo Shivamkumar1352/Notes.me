@@ -1,0 +1,37 @@
+.form{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .option{
+        width: 320px;
+        display: flex;
+        height: 1px;
+        justify-content: center;
+        align-items: center;
+        border: 0.5px solid var(--grey-400);
+        margin-bottom: 40px;
+        
+        
+        span{
+            font-size: var(--fs-sm);
+            z-index: 1;
+            padding: 0 15px;
+            color: var(--grey-400);
+            position: absolute;
+            background-color: var(--white);
+        }
+    }
+
+    .details{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+
+        .loginBtn{
+        background-color: var(--green);
+        }
+    }
+}
